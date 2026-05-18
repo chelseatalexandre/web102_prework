@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function addGamesToPage(games) {
 
+        gamesContainer.innerHTML = "";
+
         for (const game of games) {
 
             const gameCard = document.createElement("div");
@@ -25,5 +27,31 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     addGamesToPage(GAMES_JSON);
+
+    const unfundedBtn = document.getElementById("unfunded-btn");
+    const fundedBtn = document.getElementById("funded-btn");
+    const allBtn = document.getElementById("all-btn");
+
+    unfundedBtn.addEventListener("click", () => {
+
+        const unfundedGames = GAMES_JSON.filter(game => {
+            return game.pledged < game.goal;
+        });
+
+        addGamesToPage(unfundedGames);
+    });
+
+    fundedBtn.addEventListener("click", () => {
+
+        const fundedGames = GAMES_JSON.filter(game => {
+            return game.pledged >= game.goal;
+        });
+
+        addGamesToPage(fundedGames);
+    });
+
+    allBtn.addEventListener("click", () => {
+        addGamesToPage(GAMES_JSON);
+    });
 
 });
