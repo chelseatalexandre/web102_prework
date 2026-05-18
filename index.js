@@ -34,12 +34,11 @@ function addGamesToPage(games) {
 
         gameCard.classList.add("game-card");
 
-       gameCard.innerHTML = `
+     gameCard.innerHTML = `
     <h3>${game.name}</h3>
     <p>${game.description}</p>
     <p>Pledged: $${game.pledged}</p>
 `;
-        `;
 
         gamesContainer.appendChild(gameCard);
     }
@@ -56,6 +55,12 @@ addGamesToPage(GAMES_JSON);
 // grab the contributions card element
 const contributionsCard = document.getElementById("num-contributions");
 
+const contributions = GAMES_JSON.reduce((acc, game) => {
+    return acc + game.backers;
+}, 0);
+
+contributionsCard.innerHTML = contributions.toLocaleString("en-US");
+
 // use reduce() to count the number of total contributions by summing the backers
 
 
@@ -65,11 +70,19 @@ const contributionsCard = document.getElementById("num-contributions");
 // grab the amount raised card, then use reduce() to find the total amount raised
 const raisedCard = document.getElementById("total-raised");
 
+const raised = GAMES_JSON.reduce((acc, game) => {
+    return acc + game.pledged;
+}, 0);
+
+raisedCard.innerHTML = "$" + raised.toLocaleString("en-US");
+
 // set inner HTML using template literal
 
 
 // grab number of games card and set its inner HTML
 const gamesCard = document.getElementById("num-games");
+
+gamesCard.innerHTML = GAMES_JSON.length;
 
 
 /*************************************************************************************
