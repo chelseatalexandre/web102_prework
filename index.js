@@ -30,19 +30,19 @@ function addGamesToPage(games) {
 
     for (const game of games) {
 
-    const gameCard = document.createElement("div");
+        const gameCard = document.createElement("div");
 
-    gameCard.classList.add("game-card");
+        gameCard.classList.add("game-card");
 
-    gameCard.innerHTML = `
-        <img class="game-img" src="${game.img}" />
-        <h3>${game.name}</h3>
-        <p>${game.description}</p>
-        <p>Pledged: $${game.pledged}</p>
-    `;
+        gameCard.innerHTML = `
+            <img class="game-img" src="${game.img}" />
+            <h3>${game.name}</h3>
+            <p>${game.description}</p>
+            <p>Pledged: $${game.pledged}</p>
+        `;
 
-    gamesContainer.appendChild(gameCard);
-
+        gamesContainer.appendChild(gameCard);
+    }
 }
 
 addGamesToPage(GAMES_JSON);
