@@ -34,11 +34,11 @@ function addGamesToPage(games) {
 
         gameCard.classList.add("game-card");
 
-        gameCard.innerHTML = `
-            <img class="game-img" src="${game.img}" alt="${game.name}" />
-            <h3>${game.name}</h3>
-            <p>${game.description}</p>
-            <p>Pledged: $${game.pledged}</p>
+       gameCard.innerHTML = `
+    <h3>${game.name}</h3>
+    <p>${game.description}</p>
+    <p>Pledged: $${game.pledged}</p>
+`;
         `;
 
         gamesContainer.appendChild(gameCard);
