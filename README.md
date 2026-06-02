@@ -2,7 +2,7 @@
 
 Submitted by: Chelsea Alexandre
 
-Sea Monster Crowdfunding is a crowdfunding platform that helps tabletop game creators raise money for their projects. This website displays information about active game campaigns, including funding progress, contributions, and campaign statistics. Currently, there are [INSERT NUMBER] games that remain unfunded and have not yet reached their funding goals.
+Sea Monster Crowdfunding is a crowdfunding platform that helps tabletop game creators raise money for their projects. This website displays information about active game campaigns, including funding progress, contributions, and campaign statistics. Currently, there are 5 games that remain unfunded and have not yet reached their funding goals.
 
 
 Time spent: 15 hours spent in total
@@ -24,10 +24,12 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='https://i.imgur.com/ABC123.gif' title='Video Walkthrough' width='600' alt='Video Walkthrough' />
+<img src="PASTE_GIF_URL_HERE" title="Video Walkthrough" width="600" alt="Video Walkthrough" />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+
+GIF created with EZGIF and macOS Screen Recording.
+
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
