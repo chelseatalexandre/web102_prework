@@ -2,8 +2,7 @@
 
 Submitted by: Chelsea Alexandre
 
-Sea Monster Crowdfunding is a company that helps tabletop game creators raise money for their projects through crowdfunding campaigns. This website displays information about
-the games, funding progress, and campaign statistics. Currently, there are X games that remain unfunded and have not yet reached their crowdfunding goals.
+Sea Monster Crowdfunding is a crowdfunding platform that helps tabletop game creators raise money for their projects. This website displays information about active game campaigns, including funding progress, contributions, and campaign statistics. Currently, there are [INSERT NUMBER] games that remain unfunded and have not yet reached their funding goals.
 
 
 Time spent: 15 hours spent in total
